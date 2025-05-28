@@ -16,7 +16,6 @@ exclude-dirs:
   - tmp
   - .cache
 
-
 output:
   formats:
     - format: colored-line-number
@@ -45,6 +44,16 @@ linters:
     - shadow
 
 issues:
+  exclude-files:
+    - \.pb\.go$
+    - \.pb\.gw\.go$
+
+  exclude-dirs:
+    - bin
+    - vendor
+    - var
+    - tmp
+    - .cache
   exclude-use-default: false
   exclude:
     - G104 # _ instead of err checks
