@@ -5,17 +5,6 @@ run:
   issues-exit-code: 1
   tests: true
 
-exclude-files:
-  - \.pb\.go$
-  - \.pb\.gw\.go$
-
-exclude-dirs:
-  - bin
-  - vendor
-  - var
-  - tmp
-  - .cache
-
 output:
   formats:
     - format: colored-line-number
